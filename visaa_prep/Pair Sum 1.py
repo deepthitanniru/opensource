@@ -1,0 +1,5 @@
+N = int(input())
+arr = list(map(int,input().split()))
+k = int(input())
+seen = set()
+print("true" if any(k - num in seen or seen.add(num) for num in arr) else "false")
